@@ -44,5 +44,5 @@ account.  The new playlists will have names like
 [my_prefix0, my_prefix1, etc.].
 
 Finally, if you want to add all of this music to "Your Music" on 
-Spotify, click on a new playlist, select all the tracks, and drag to 
-YourMusic/Songs.
+Spotify, open the desktop Spotify program, click on a new 
+playlist, select all the tracks, and drag to YourMusic/Songs.
