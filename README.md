@@ -1,18 +1,23 @@
 # ascii_spotify
-code for turning an ascii file into a Spotify playlist
+Here's a bit of python code for generating a Spotify playlist from an ascii file.  Maybe you have a stack of records/tapes/CDs and want to get that music linked with your Spotify account.  Make a big ascii/txt file that looks like this inside:
+
+```
+george harrison, all things must pass
+sonic youth
+the smiths, all 
+```
+and this code will, after a bit of user authentification, add these tracks to a new Spotify playlist.  In this case, you'd get all the tracks on George Harrison's "All Things Must Pass", the "Top Hits" tracks of Sonic Youth (as determined by Spotify), and *all* the tracks from The Smiths.
 
 ## Installation
-First you need to install pyspotify.  On OS X 10.9 I did:
+First you need to install pyspotify ([details here](https://pyspotify.mopidy.com/en/latest/installation/)).  On OS X 10.9 I did:
 
 `brew install homebrew/binary/libspotify`
 
 then
 
 `pip install --pre pyspotify`
-(see [here](https://pyspotify.mopidy.com/en/latest/installation/) for details)
 
-Then I went here https://developer.spotify.com/technologies/libspotify/keys/ to get the binary key.
-(see [here](https://pyspotify.mopidy.com/en/latest/quickstart/#application-keys) for details).
+Then you need to get your [binary developer key](https://pyspotify.mopidy.com/en/latest/quickstart/#application-keys) from Spotify.  I got mine [here](https://developer.spotify.com/technologies/libspotify/keys/).
 
 
 ## Usage
@@ -41,7 +46,8 @@ Spotify, so you can have some misspelling, use lower case, and
 drop some words.  Once it compiles all of the tracks, it will 
 push those tracks into one or more new playlists in your Spotify 
 account.  The new playlists will have names like 
-[my_prefix0, my_prefix1, etc.].
+[my_prefix0, my_prefix1, etc.].  There are multiple playlists because
+each one can hold at most 500 songs.
 
 Finally, if you want to add all of this music to "Your Music" on 
 Spotify, open the desktop Spotify program, click on a new 
