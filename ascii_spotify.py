@@ -25,7 +25,8 @@ Spotify, so you can have some misspelling, use lower case, and
 drop some words.  Once it compiles all of the tracks, it will 
 push those tracks into one or more new playlists in your Spotify 
 account.  The new playlists will have names like 
-[my_prefix0, my_prefix1, etc.].
+[my_prefix0, my_prefix1, etc.].  There are multiple playlists 
+because each one can hold at most 500 songs.
 
 Finally, if you want to add all of this music to "Your Music" on 
 Spotify, open the desktop Spotify program, click on a new 
