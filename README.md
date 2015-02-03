@@ -4,9 +4,9 @@ Here's a bit of python code for generating a Spotify playlist from an ascii file
 ```
 george harrison, all things must pass
 sonic youth
-the smiths, all 
+fiery furnaces, all 
 ```
-and this code will, after a bit of user authentification, add these tracks to a new Spotify playlist.  In this case, you'd get all the tracks on George Harrison's "All Things Must Pass", the "Top Hits" tracks of Sonic Youth (as determined by Spotify), and *all* the tracks from The Smiths.
+and this code will, after a bit of user authentification, add these tracks to a new Spotify playlist.  In this case, you'd get all the tracks on George Harrison's "All Things Must Pass", the "Top Hits" tracks of Sonic Youth (as determined by Spotify), and *all* the tracks from The Fiery Furnaces.
 
 ## Installation
 First you need to install pyspotify ([details here](https://pyspotify.mopidy.com/en/latest/installation/)).  On OS X 10.9 I did:
