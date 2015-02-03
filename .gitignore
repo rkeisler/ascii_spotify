@@ -1,3 +1,6 @@
+*txt
+*key
+tmp
 *.pyc
 .ipynb_checkpoints
 *~
