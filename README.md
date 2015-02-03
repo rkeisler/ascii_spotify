@@ -5,6 +5,9 @@ code for turning an ascii file into a Spotify playlist
 First you need to install pyspotify.  On OS X 10.9 I did:
 
 `brew install homebrew/binary/libspotify`
+
+then
+
 `pip install --pre pyspotify`
 (see [here](https://pyspotify.mopidy.com/en/latest/installation/) for details)
 
@@ -32,7 +35,7 @@ which gets the Spotify "top hit" tracks by this artist, and
 e.g. "fiery furnaces, all"
 which gets every track by this artist.
 
-You can mix and match those in a single file.
+You can mix and match those patterns in a single file.
 Note that we're leveraging the smart-search of capabilities of 
 Spotify, so you can have some misspelling, use lower case, and 
 drop some words.  Once it compiles all of the tracks, it will 
