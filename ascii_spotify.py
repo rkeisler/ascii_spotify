@@ -209,6 +209,10 @@ class AsciiUploader():
         print 'adding %i tracks to %s'%(len(these_tracks), playlist_name)
         playlist.add_tracks(these_tracks)
         while playlist.has_pending_changes: sleep(0.1)
+        # For some reason playlist.has_pending_changes can be False 
+        # before the tracks are uploaded.  Here's a hack around this:
+        sleep(1)
+
 
     def viz_tracks_to_add(self):
         print ' '
