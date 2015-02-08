@@ -9,7 +9,7 @@ a bunch of tracks from Spotify.  There are three patterns for the lines
 of this file
 
 1) ARTIST, ALBUM
-e.g. "george harrison, all things must pass"
+e.g. "r.e.m., murmur"
 which gets all the tracks from this album,
 
 2) ARTIST
@@ -116,6 +116,16 @@ class AsciiUploader():
             artist_search_string.encode('utf-8'), 
             artist.name.encode('utf-8'))
         artist_browser = artist.browse().load()
+
+        # this is a hack to make sure all of the albums have 
+        # loaded before we proceed.
+        artist_browser.albums
+        len0 = len(artist_browser.albums)-1
+        from time import sleep
+        while len(artist_browser.albums)>len0:
+            sleep(1)
+            len0 = len(artist_browser.albums)
+
         if len(artist_browser.albums)==0: return []
         if type(album_search_string)!=str: return []
 
@@ -162,6 +172,7 @@ class AsciiUploader():
                 if word.lower() in this_album_name: score += len(word)
                 possible_score += len(word)
             frac_score = score/possible_score
+            print this_album_name, frac_score
             if ((score>2) & (frac_score>0.5)):
                 album = this_album
                 print '  album: %s --- %s'%(

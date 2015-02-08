@@ -2,11 +2,11 @@
 Here's a bit of python code for generating a Spotify playlist from an ascii file.  Maybe you have a stack of records/tapes/CDs and want to get that music linked with your Spotify account.  Make a big ascii/txt file that looks like this inside:
 
 ```
-george harrison, all things must pass
-sonic youth
-fiery furnaces, all 
+radiohead, kid a
+fiery furnaces
+caribou, all
 ```
-and this code will, after a bit of user authentification, add these tracks to a new Spotify playlist.  In this case, you'd get all the tracks on George Harrison's "All Things Must Pass", the "Top Hits" tracks of Sonic Youth (as determined by Spotify), and *all* the tracks from The Fiery Furnaces.
+and this code will, after a bit of user authentification, add these tracks to a new Spotify playlist.  In this case, you'd get all the tracks on Radiohead's "Kid A", the "Top Hits" tracks of The Fiery Furnaces (as determined by Spotify), and *all* the tracks from Caribou.
 
 ## Installation
 First you need to install pyspotify ([details here](https://pyspotify.mopidy.com/en/latest/installation/)).  On OS X 10.9 I did:
@@ -29,7 +29,7 @@ a bunch of tracks from Spotify.  There are three patterns for the lines
 of this file
 
 1. "ARTIST, ALBUM"
-e.g. "george harrison, all things must pass"
+e.g. "r.e.m., murmur"
 which gets all the tracks from this album,
 
 2. "ARTIST"
